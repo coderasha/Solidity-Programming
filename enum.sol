@@ -13,6 +13,10 @@ enum State{
 
 }
 State state;
+function getState() public view returns(State){
+
+    return state;
+}
 }
 
 
