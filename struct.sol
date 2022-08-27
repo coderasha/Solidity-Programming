@@ -14,6 +14,13 @@ struct Employee{
 
 Employee public emp; 
 Employee[] public emps;
+constructor(string memory _name,uint _salary , address _acc) {
+    emp.name = _name;
+    emp.salary = _salary;
+    emp.acc = _acc;
+
+
+}
 
 
 function setValues() public  {
@@ -27,8 +34,16 @@ function setValues() public  {
       emps.push(emp2);
        emps.push(emp3);
 
-       emps.push(Employee("Dipta",5000,0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2));
 
+       emps.push(Employee("Dipta",5000,0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2));
+       emps.push(emp);
+
+
+}
+function chaVal()public{
+//    Employee storage emp_temp= emp;
+//    emp_temp.name ="chuchu";
+    emp.name ="chuchu";
 
 }
 
